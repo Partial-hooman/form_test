@@ -1,5 +1,5 @@
 import streamlit as st 
-from streamlit_options_menu import options_menu
+from streamlit_option_menu import option_menu
 #from googleapiclient.discovery import build, Resource
 #from google_auth_oauthlib.flow import Flow
 #import os
