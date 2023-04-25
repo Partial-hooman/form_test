@@ -1,8 +1,7 @@
 import streamlit as st 
 from streamlit_option_menu import option_menu
 
-if "bro" not in st.session_state:
-    st.session_state["bro"] = ""
+
 #from googleapiclient.discovery import build, Resource
 #from google_auth_oauthlib.flow import Flow
 #import os
@@ -50,13 +49,8 @@ with st.sidebar:
      choose = option_menu("app",["m","s"])
  
 if choose == "m":
-   st.write(st.session_state)
-   button = st.file_uploader("bro")
-   if st.session_state.bro != "":
-      button = st.session_state.bro
-   if button is not None:
-      st.session_state.bro = button
+   button = st.file_uploader("bro",key="bro")
 elif choose == "s":
-   st.write(st.session_state)
+   st.write(st.session_state.bro)
    button = st.file_uploader("gro")
 
