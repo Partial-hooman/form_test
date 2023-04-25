@@ -51,12 +51,12 @@ with st.sidebar:
  
 if choose == "m":
    st.write(st.session_state)
-   button = st.file_uploader("bro",key="fro")
+   button = st.file_uploader("bro")
    if st.session_state.bro != "":
       button = st.session_state.bro
    if button is not None:
       st.session_state.bro = button
 elif choose == "s":
    st.write(st.session_state)
-   button = st.file_uploader("gro",key="gro")
+   button = st.file_uploader("gro")
 
