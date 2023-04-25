@@ -49,6 +49,7 @@ with st.sidebar:
      choose = option_menu("app",["m","s"])
  
 if choose == "m":
+   st.write(st.session_state)
    button = st.file_uploader("bro",key="bro")
 elif choose == "s":
    st.write(st.session_state.bro)
